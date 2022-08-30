@@ -1,6 +1,5 @@
 type: object
   description: Contains optional fields required by 3DS 2 authentication protocol.
-#  required: [sdk]
   properties: 
     challangeRequested:
       type: string
