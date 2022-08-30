@@ -15,9 +15,10 @@ requestBody:
         required:
           [customerIp, merchantPosId, description, currencyCode, totalAmount, products]
         properties:
-          extOrderId:
+          continueUrl:
             type: string
-            description: ID of an order used in merchant system. Order identifier assigned by the merchant. It enables merchants to find a specific order in their system. This value must be unique within a single POS.
+            description: Address for redirecting the customer after payment is commenced.
+            example: www.example.com/path
           notifyUrl:
             type: string
             description: The address for sending notifications
@@ -32,10 +33,6 @@ requestBody:
             description: Point of sale ID.
             examples: 
               - "140332"
-          validityTime:
-            type: string
-            description: Duration for the validity of an order (in seconds), during which time payment must be made. Default value 86400.
-            example: "100000"
           description:
             type: string
             description: 	Description of the order.
@@ -50,6 +47,9 @@ requestBody:
             type: string
             maxLength: 22
             description: Payment recipient name followed by payment description (order ID, ticket number etc) visible on card statement. The name should be easy to recognize by the cardholder. If field is not provided, static name configured by PayU will be used.
+          extOrderId:
+            type: string
+            description: ID of an order used in merchant system. Order identifier assigned by the merchant. It enables merchants to find a specific order in their system. This value must be unique within a single POS.
           currencyCode:
             type: string
             description: Currency code compliant with ISO 4217 (e.g EUR).
@@ -59,18 +59,18 @@ requestBody:
             type: string
             description: Total price of the order in pennies (e.g. 1000 is 10.00 EUR). Applies also to currencies without subunits (e.g. 1000 is 10 HUF).
             example: "1000"
+          validityTime:
+            type: string
+            description: Duration for the validity of an order (in seconds), during which time payment must be made. Default value 86400.
+            example: "100000"
           cardOnFile:
             type: string
-            description: 	Information about party initializing order.
+            description: 	Information about party initializing order or a transaction with Buyer consent to save card token. "cardOnFile" parameter cannot be used with "recurring" parameter.
             enum: [FIRST, STANDARD_CARDHOLDER, STANDARD_MERCHANT]
           recurring:
             type: string
-            description: Marks the order as recurring payment. 
-            enum: [FIRST, STANDARD]
-          continueUrl:
-            type: string
-            description: Address for redirecting the customer after payment is commenced.
-            example: www.example.com/path
+            description: Marks the order as recurring payment - first or subsequent. "recurring" parameter cannot be used with "cardOnFile" parameter.
+            enum: [FIRST, STANDARD] 
           buyer:
             $ref: ../../components/objects/Buyer.yaml
           products:
