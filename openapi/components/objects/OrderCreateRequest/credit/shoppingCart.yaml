@@ -7,7 +7,7 @@ items:
   type: object
   properties:
     shippingMethod:
-      $ref: shippingMethod/shippingMethod.yaml
+      $ref: shoppingCart/shippingMethod.yaml
     products:
       $ref: ../../../arrays/OrderCreateRequest/credit/shoppingCart/products.yaml
       # type: array

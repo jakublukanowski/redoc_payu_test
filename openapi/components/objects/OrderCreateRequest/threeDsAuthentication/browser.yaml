@@ -1,4 +1,4 @@
-typ: object
+type: object
 description: Browser data required for 3DS 2 browser flow. If not provided, these data will be collected by PayU. It is strongly recommended to include it when charging a stored card (multi-use token), because in some cases it will spare you redirection to PayU's authentication page.
 required: 
   [acceptHeaders, requestIP, screenWidth, javaEnabled, timezoneOffset, screenHeight, userAgent, colorDepth, language]
