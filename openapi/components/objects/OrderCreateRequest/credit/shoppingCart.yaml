@@ -7,9 +7,9 @@ items:
   type: object
   properties:
     shippingMethod:
-      $ref: shippingMethod.yaml
+      $ref: shippingMethod/shippingMethod.yaml
     products:
-      $ref: ../../arrays/OrderCreateRequest/credit/shoppingCart/products.yaml
+      $ref: ../../../arrays/OrderCreateRequest/credit/shoppingCart/products.yaml
       # type: array
       # description: >-
       #   Section containing data about ordered products.
