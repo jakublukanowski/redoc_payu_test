@@ -14,8 +14,8 @@ properties:
     $ref: threeDsAuthentication/browser.yaml
   sdk:
     $ref: threeDsAuthentication/sdk.yaml
-  merchantRiskIndicator:
-    $ref: threeDsAuthentication/merchantRiskIndicator.yaml
+#  merchantRiskIndicator:
+#    $ref: threeDsAuthentication/merchantRiskIndicator.yaml
   recurring:
     $ref: threeDsAuthentication/recurring.yaml
   cardholder:
