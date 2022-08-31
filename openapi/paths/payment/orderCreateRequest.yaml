@@ -80,7 +80,7 @@ requestBody:
           mcpData:
             $ref: ../../components/objects/OrderCreateRequest/mcpData.yaml
           threeDsAuthentication:
-            $ref ../../components/objects/OrderCreateRequest/threeDsAuthentication.yaml
+            $ref: ../../components/objects/OrderCreateRequest/threeDsAuthentication.yaml
           credit:
             $ref: ../../components/objects/OrderCreateRequest/credit.yaml
   description: Parameters for OrderCreateRequest
