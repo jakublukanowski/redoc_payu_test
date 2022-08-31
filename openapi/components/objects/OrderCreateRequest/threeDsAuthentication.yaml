@@ -2,7 +2,12 @@ type: object
 description: Contains optional fields required by 3DS 2 authentication protocol.
 properties: 
   challangeRequested:
-    $ref: threeDsAuthentication/challangeRequested.yaml
+    type: string
+    description: Merchant's preference regarding 3DS 2 challenge. Exclusive with exemption. Maybe overridden by PayU.
+    enum: 
+      - "YES"
+      - "NO"
+      - "MANDATE"
   exemption:
     $ref: threeDsAuthentication/exemption.yaml
   browser:
