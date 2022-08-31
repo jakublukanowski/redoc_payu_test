@@ -65,5 +65,5 @@ properties:
           hasSuccessfullyFinishedOrderInShop:
             type: string
             description: >-
-              nformation whether there were previous,
+              Information whether there were previous,
               successfully completed orders for applicant.
