@@ -85,7 +85,7 @@ responses:
                     description: Total price of the order.
                     example: "3200"
                   buyer:
-                    $ref: ../../components/objects/OrderCreateRequest/Buyer.yaml
+                    $ref: ../../components/objects/Order/Buyer.yaml
                   payMethod:
                     type: object
                     description: Used payment method.
