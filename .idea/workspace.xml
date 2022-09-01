@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97cf4f28-6629-400e-839a-0a83e25619c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/Buyer.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/BuyerDelivery.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/Status.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/credit.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/credit/shoppingCart.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/credit/shoppingCart/shippingMethod.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/credit/shoppingCart/shippingMethod/address.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/mcpData.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/payMethod.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication/browser.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication/cardholder.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication/cardholder/accountInformation.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication/cardholder/billingAddress.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication/exemption.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication/merchantRiskIndicator.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication/merchantRiskIndicator/merchantFunds.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication/recurring.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/components/objects/OrderCreateRequest/threeDsAuthentication/sdk.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi/paths/payment/orderRetrieveRequest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/openapi/paths/payment/orderRetrieveRequest.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
