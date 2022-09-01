@@ -69,20 +69,20 @@ requestBody:
             enum: [FIRST, STANDARD_CARDHOLDER, STANDARD_MERCHANT]
           recurring:
             type: string
-            description: Marks the order as recurring payment - first or subsequent. "recurring" parameter cannot be used with "cardOnFile" parameter.
+            description: Marks the order as recurring payment - first or subsequent. "recurring" parameter cannot be used with "cardOnFile" parameter
             enum: [FIRST, STANDARD] 
           buyer:
-            $ref: ../../components/objects/OrderCreateRequest/Buyer.yaml
+            $ref: ../../components/objects/Order/Buyer.yaml
           products:
-            $ref: ../../components/arrays/OrderCreateRequest/products.yaml
+            $ref: ../../components/arrays/Order/products.yaml
           payMethods:
-            $ref: ../../components/objects/OrderCreateRequest/payMethod.yaml
+            $ref: ../../components/objects/Order/payMethod.yaml
           mcpData:
-            $ref: ../../components/objects/OrderCreateRequest/mcpData.yaml
+            $ref: ../../components/objects/Order/mcpData.yaml
           threeDsAuthentication:
-            $ref: ../../components/objects/OrderCreateRequest/threeDsAuthentication.yaml
+            $ref: ../../components/objects/Order/threeDsAuthentication.yaml
           credit:
-            $ref: ../../components/objects/OrderCreateRequest/credit.yaml
+            $ref: ../../components/objects/Order/credit.yaml
   description: Parameters for OrderCreateRequest
   required: true
 responses:
