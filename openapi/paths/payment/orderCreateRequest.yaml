@@ -74,7 +74,7 @@ requestBody:
           buyer:
             $ref: ../../components/objects/Order/Buyer.yaml
           products:
-            $ref: ../../components/arrays/Order/products.yaml
+            $ref: ../../components/objects/Order/products.yaml
           payMethods:
             $ref: ../../components/objects/Order/payMethod.yaml
           mcpData:

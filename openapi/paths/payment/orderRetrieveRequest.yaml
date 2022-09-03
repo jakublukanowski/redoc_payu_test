@@ -100,11 +100,11 @@ responses:
                     type: string
                     description: Order status.
                   products:
-                    $ref: ../../components/arrays/Order/products.yaml
+                    $ref: ../../components/objects/Order/products.yaml
             status:
               $ref: ../../components/objects/Order/Status.yaml
             properties:
-              $ref: ../../components/arrays/Order/Properties.yaml
+              $ref: ../../components/objects/Order/Properties.yaml
   400:
     description: Error
     content:
