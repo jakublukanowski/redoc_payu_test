@@ -11,6 +11,7 @@ features.openapi:
   showConsole: true
   pathInMiddlePanel: true
   htmlTemplate: ./docs/index.html
+  # onlyRequiredInSamples: true
   theme:
     colors:
       primary:
@@ -27,3 +28,4 @@ features.openapi:
       - lang: JavaScript
       - lang: PHP
       - lang: Python
+      - lang: JAVA
