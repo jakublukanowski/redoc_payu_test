@@ -2,12 +2,12 @@ tags:
   - Marketplace Verification
 summary: Marketplace Verification Get
 description: Marketplace Verification Get
-operationId: Marketplace Verification Get
+operationId: MarketplaceVerificationGet
 security: 
   -  OAuth token: []
 parameters:
-  - name: verificationId
-    in: path
+  - name: id
+    in: query
     example: loremIpsum
     required: true
     content: 

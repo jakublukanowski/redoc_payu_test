@@ -4,7 +4,7 @@ summary: Retrieve specific refund for order
 description: Retrieve specific refund for order
 operationId: OrderRefundRetrieveRequest
 security: 
-  -  OAuth token: []
+  - OAuth token: []
 parameters:
   - name: orderId
     in: path

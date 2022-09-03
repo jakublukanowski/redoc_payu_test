@@ -2,18 +2,50 @@ tags:
   - Marketplace Seller
 summary: Marketplace Seller Operations History
 description: Marketplace Seller Operations History
-operationId: Marketplace Seller Operations History
+operationId: MarketplaceSellerOperationsHistory
 security: 
   -  OAuth token: []
 parameters:
-  - name: loremIpsum
+  - name: extCustomerId
     in: path
     example: loremIpsum
-    required: false
+    required: true
     content: 
       application/json: 
         schema: 
           type: string
+  - name: currencyCode
+    in: query
+    example: loremIpsum
+    required: false
+  - name: type
+    in: query
+    example: loremIpsum
+    required: false
+  - name: dateFrom
+    in: query
+    example: loremIpsum
+    required: false
+  - name: dateTo
+    in: query
+    example: loremIpsum
+    required: false
+  - name: limit
+    in: query
+    example: loremIpsum
+    required: false
+  - name: offset
+    in: query
+    example: loremIpsum
+    required: false
+  - name: +sortBy
+    in: query
+    example: loremIpsum
+    required: false
+  - name: currencyCode
+    in: query
+    example: -sortBy
+    required: false
   - name: Content-Type
     in: header
     description: Content type

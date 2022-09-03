@@ -2,7 +2,7 @@ tags:
   - Partner Merchant Registration
 summary: Partner Merchant Registration URL Create
 description: Partner Merchant Registration URL Create
-operationId: Partner Merchant Registration URL Create
+operationId: PartnerMerchantRegistrationURLCreate
 security: 
   -  OAuth token: []
 parameters:

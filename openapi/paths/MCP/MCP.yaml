@@ -2,7 +2,7 @@ tags:
   - Multi-Currency pricing  
 summary: Multi-Currency pricing
 description: Multi-Currency pricing
-operationId: Multi-Currency pricing
+operationId: MultiCurrencyPricing
 security: 
   -  OAuth token: []
 parameters:

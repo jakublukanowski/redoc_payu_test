@@ -2,14 +2,14 @@ tags:
   - Marketplace Seller
 summary: Marketplace Seller Fee Debit Transfer
 description: Marketplace Seller Fee Debit Transfer
-operationId: Marketplace Seller Fee Debit Transfer
+operationId: MarketplaceSellerFeeDebitTransfer
 security: 
   -  OAuth token: []
 parameters:
-  - name: loremIpsum
+  - name: extCustomerId
     in: path
     example: loremIpsum
-    required: false
+    required: true
     content: 
       application/json: 
         schema: 

@@ -2,18 +2,22 @@ tags:
   - Marketplace Seller
 summary: Marketplace Seller Status
 description: Marketplace Seller Status
-operationId: Marketplace Seller Status
+operationId: MarketplaceSellerStatus
 security: 
   -  OAuth token: []
 parameters:
-  - name: loremIpsum
+  - name: extCustomerId
     in: path
     example: loremIpsum
-    required: false
+    required: true
     content: 
       application/json: 
         schema: 
           type: string
+  - name: currencyCode
+    in: query
+    example: loremIpsum
+    required: true
   - name: Content-Type
     in: header
     description: Content type

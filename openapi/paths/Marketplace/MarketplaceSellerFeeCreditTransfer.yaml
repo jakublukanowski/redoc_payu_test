@@ -2,14 +2,14 @@ tags:
   - Marketplace Seller
 summary: Marketplace Seller Fee Credit Transfer
 description: Marketplace Seller Fee Credit Transfer
-operationId: Marketplace Seller Fee Credit Transfer
+operationId: MarketplaceSellerFeeCreditTransfer
 security: 
   -  OAuth token: []
 parameters:
-  - name: loremIpsum
+  - name: extCustomerId
     in: path
     example: loremIpsum
-    required: false
+    required: true
     content: 
       application/json: 
         schema: 

@@ -2,12 +2,12 @@ tags:
   - FX reference
 summary: FX reference
 description: FX reference
-operationId: FX reference
+operationId: FxReference
 security: 
   -  OAuth token: []
 parameters:
   - name: termCurrency
-    in: path
+    in: query
     example: loremIpsum
     required: true
     content: 

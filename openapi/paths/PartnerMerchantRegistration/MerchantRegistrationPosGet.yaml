@@ -2,7 +2,7 @@ tags:
   - Partner Merchant Registration
 summary: Partner Merchant Registration POS REST Create
 description: Partner Merchant Registration POS REST Create
-operationId: Partner Merchant Registration POS REST Create
+operationId: PartnerMerchantRegistrationPOSRESTCreate
 security: 
   -  OAuth token: []
 parameters:

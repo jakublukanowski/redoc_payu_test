@@ -9,7 +9,7 @@ parameters:
   - name: token
     in: path
     example: loremIpsum
-    required: false
+    required: true
     content: 
       application/json: 
         schema: 

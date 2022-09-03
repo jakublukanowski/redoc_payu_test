@@ -2,14 +2,13 @@ tags:
   - Notifications
 summary: Structure of notification about order status change sent from PayU to URL address provided by Merchant
 description: Payment Facilitator Submerchant Status Change Notification
-operationId: Payment Facilitator Submerchant Status Change Notification
+operationId: PaymentFacilitatorSubmerchantStatusChangeNotification
 security: 
   -  OAuth token: []
 parameters:
   - name: Content-Type
     in: header
     description: Content type
-    required: true
     schema:
       type: string
     style: simple

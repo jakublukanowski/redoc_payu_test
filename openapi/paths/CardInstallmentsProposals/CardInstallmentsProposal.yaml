@@ -2,7 +2,7 @@ tags:
   - Card Installments Proposal
 summary: Card Installments Proposal
 description: Card Installments Proposal
-operationId: Card Installments Proposal
+operationId: CardInstallmentsProposal
 security: 
   -  OAuth token: []
 parameters:

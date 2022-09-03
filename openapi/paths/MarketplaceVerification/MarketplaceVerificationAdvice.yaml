@@ -2,7 +2,7 @@ tags:
   - Marketplace Verification
 summary: Marketplace Verification Advice
 description: Marketplace Verification Advice
-operationId: Marketplace Verification Advice
+operationId: MarketplaceVerificationAdvice
 security: 
   -  OAuth token: []
 parameters:
