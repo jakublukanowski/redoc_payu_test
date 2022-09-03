@@ -63,7 +63,7 @@ paths:
       $ref: paths/MCP/MCP.yaml
   /api/v2_1/card-installment-proposals/{proposalId}:
     get:
-      $ref: paths/CardInstallmentsProposals/CardInstallmentsProposals.yaml
+      $ref: paths/CardInstallmentsProposals/CardInstallmentsProposal.yaml
   /api/v2_1/card-installment-proposals/{proposalId}/decisions:
     post:
       $ref: paths/CardInstallmentsProposals/CardInstallmentsProposalDecisions.yaml

@@ -68,8 +68,6 @@ parameters:
     required: true
     schema:
       type: string
-    schema:
-      type: string
     style: simple
     example: application/json
   - name: Authorization

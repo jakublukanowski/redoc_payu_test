@@ -45,4 +45,4 @@ responses:
     content: 
       application/json: 
         schema: 
-          $ref: ../../components/responses/401.yaml
+          $ref: ../../../components/responses/401.yaml
