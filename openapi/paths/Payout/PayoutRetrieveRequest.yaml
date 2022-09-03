@@ -39,21 +39,23 @@ responses:
         schema:
           type: object
           properties: 
-            payout: object
-            properties: 
-              payoutId:
-                type: string
-              amount:
-                type: number
-              description:
-                type: string
-              status:
-                type: string
-                enum: [PENDING, WAITING, CANCELLED, REALIZED]  
-            status: object
-            properties:
-              statusCode:
-                type: string
+            payout:
+              type: object
+              properties: 
+                payoutId:
+                  type: string
+                amount:
+                  type: number
+                description:
+                  type: string
+                status:
+                  type: string
+                  enum: [PENDING, WAITING, CANCELLED, REALIZED]  
+            status:
+              type: object
+              properties:
+                statusCode:
+                  type: string
   401:
     description: Unauthorized
     content: 
