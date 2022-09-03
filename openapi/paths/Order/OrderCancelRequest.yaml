@@ -2,7 +2,7 @@ tags:
   - Order
 summary: Cancel waiting order
 description: Cancel order
-operationId: orderCancelRequest
+operationId: OrderCancelRequest
 security:
   - OAuth token: []
 parameters:

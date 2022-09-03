@@ -1,7 +1,8 @@
 tags: 
   - Payment
-operationId: TransactionRetrieveRequest
 summary: Retrieve transaction data
+description: Retrieve transaction data
+operationId: TransactionRetrieveRequest
 security: 
   -  OAuth token: []
 parameters:
@@ -99,12 +100,6 @@ responses:
                   status:
                     type: string
                     description: Order status.
-                  products:
-                    $ref: ../../components/objects/Order/products.yaml
-            status:
-              $ref: ../../components/objects/Order/status.yaml
-            properties:
-              $ref: ../../components/objects/Order/properties.yaml
   400:
     description: Error
     content:
@@ -118,9 +113,6 @@ responses:
                 statusCode:
                   type: string
                   example: ERROR
-            redirectUri:
-              type: string
-              example: "{payment_summary_redirection_url}"
   404:
     description: Not Found
     content: 
@@ -139,4 +131,3 @@ responses:
                 statusDesc:
                   type: string
                   description: Error description.
-    

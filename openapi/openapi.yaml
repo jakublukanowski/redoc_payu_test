@@ -20,10 +20,10 @@ paths:
       $ref: paths/authorize.yaml
   /api/v2_1/orders:
     post:
-      $ref: paths/Order/OrderCaptureRequest.yaml
+      $ref: paths/Order/OrderCreateRequest.yaml
   /api/v2_1/orders/{orderId}:
     get:
-      $ref: paths/Order/OrderCaptureRequest.yaml
+      $ref: paths/Order/OrderRetrieveRequest.yaml
     delete:
       $ref: paths/Order/OrderCancelRequest.yaml
   /api/v2_1/orders/{orderId}/status:

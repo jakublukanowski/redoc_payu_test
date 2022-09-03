@@ -1,7 +1,8 @@
 tags: 
   - Order
-operationId: OrderRetrieveRequest
 summary: Retrieve order data
+description: Retrieve order data
+operationId: OrderRetrieveRequest
 security: 
   -  OAuth token: []
 parameters:
