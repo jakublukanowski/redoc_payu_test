@@ -20,7 +20,7 @@ paths:
       $ref: paths/authorize.yaml
   /api/v2_1/orders:
     post:
-      $ref: paths/Order/OrderCreateRequest.yaml
+      $ref: paths/Order/OrderRetrieveRequest.yaml
   /api/v2_1/orders/{orderId}:
     get:
       $ref: paths/Order/OrderRetrieveRequest.yaml
