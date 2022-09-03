@@ -112,10 +112,12 @@ paths:
   /api/aml-verification/v1/dataloading/payouts/bankAccountData:
     post:
       $ref: paths/MarketplaceVerification/Dataloading/Payouts/MarketplaceVerificationDataloadingPayoutsBankAccountDataWithVerificationTransfer.yaml
-    post:
-      $ref: paths/MarketplaceVerification/Dataloading/Payouts/MarketplaceVerificationDataloadingPayoutsBankAccountDataWithoutVerificationTransfer.yaml
-    post:
-      $ref: paths/MarketplaceVerification/Dataloading/Payouts/MarketplaceVerificationDataloadingPayoutsBankAccountDataBankStatementDataComparison.yaml
+  #/api/aml-verification/v1/dataloading/payouts/bankAccountData:
+  #  post:
+  #    $ref: paths/MarketplaceVerification/Dataloading/Payouts/MarketplaceVerificationDataloadingPayoutsBankAccountDataWithoutVerificationTransfer.yaml
+  #/api/aml-verification/v1/dataloading/payouts/bankAccountData:
+  #  post:
+  #    $ref: paths/MarketplaceVerification/Dataloading/Payouts/MarketplaceVerificationDataloadingPayoutsBankAccountDataBankStatementDataComparison.yaml
   /api/aml-verification/v1/dataloading/payouts/payoneer:
     post:
       $ref: paths/MarketplaceVerification/Dataloading/Payouts/MarketplaceVerificationDataloadingPayoutsPayoneer.yaml
@@ -140,12 +142,9 @@ paths:
   /api/v2_1/shops/{shopId}/poses:
     post:
       $ref: paths/PartnerMerchantRegistration/MerchantRegistrationPosRestCreate.yaml
-  /api/v2_1/shops/{shopId}/poses:
-    post:
-      $ref: paths/PartnerMerchantRegistration/MerchantRegistrationPosClassicCreate.yaml
-  /api/v2_1/poses/{publicPosId}:
-    get:
-      $ref: paths/PartnerMerchantRegistration/MerchantRegistrationPosGet.yaml
+  #/api/v2_1/shops/{shopId}/poses:
+  #  post:
+  #    $ref: paths/PartnerMerchantRegistration/MerchantRegistrationPosClassicCreate.yaml
   /api/v2_1/poses/{publicPosId}:
     get:
       $ref: paths/PartnerMerchantRegistration/MerchantRegistrationPosGet.yaml
@@ -160,19 +159,19 @@ paths:
       $ref: paths/PaymentFacilitatorSubmerchantRegistration/PaymentFacilitatorSubmerchantUpdate.yaml
     get:
       $ref: paths/PaymentFacilitatorSubmerchantRegistration/PaymentFacilitatorSubmerchantGet.yaml
-  :
+  none:
     post:
       $ref: paths/Notifications/OrderNotification.yaml
-  :
+  none1:
     post:
       $ref: paths/Notifications/RefundNotification.yaml
-  :
+  none2:
     post:
       $ref: paths/Notifications/StatementNotification.yaml
-  :
+  none3:
     post:
       $ref: paths/Notifications/PaymentFacilitaotrSubmerchantStatusChangeNotification.yaml
-  :
+  none4:
     post:
       $ref: paths/Notifications/MarketplaceVerificationStatusChangeNotification.yaml
 components:
