@@ -42,11 +42,11 @@ paths:
       $ref: paths/Refund/RetrieveOrderRefundRequest.yaml
   /api/v2_1/payouts:
     post:
-      $ref: paths/payouts/PayoutCreateRequest.yaml
+      $ref: paths/Payput/PayoutCreateRequest.yaml
   /api/v2_1/payouts/{payoutId}:
     get:
-      $ref: paths/payouts/PayoutRetrieveRequest.yaml
-  /api/v2_1/shops/{shop_id}:
+      $ref: paths/Payout/PayoutRetrieveRequest.yaml
+  /api/v2_1/shops/{ShopId}:
     get:
       $ref: paths/Shop/RetrieveShopBalanceRequest.yaml
 components:
