@@ -1,8 +1,8 @@
 tags:
   - Payout
 summary: Create new payout
-description: OrderCreateRequest
-operationId: OrderCreateRequest
+description: Create new payout
+operationId: PayoutCreateRequest
 security:
   - OAuth token: []
 parameters:
@@ -45,7 +45,6 @@ responses:
               type: string
               enum: [PENDING, WAITING, CANCELLED, REALIZED]  
           status: object
-          properties:
             statusCode:
               type: string
   400:
