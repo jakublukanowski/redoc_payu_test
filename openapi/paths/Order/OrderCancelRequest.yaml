@@ -1,6 +1,6 @@
 tags:
   - Order
-summary: Cancel waiting order
+summary: Cancel order
 description: Cancel order
 operationId: OrderCancelRequest
 security:
@@ -33,7 +33,7 @@ parameters:
     example: Bearer 3e5cac39-7e38-4139-8fd6-30adc06a61bd
 responses: 
   200: 
-    description: SUCCESS
+    description: OK
     content: 
       application/json: 
         schema: 

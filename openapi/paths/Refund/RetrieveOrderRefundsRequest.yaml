@@ -1,6 +1,7 @@
 tags: 
   - Refund
-summary: Retrieve all refunds for the specific orderId
+summary: Retrieve all refunds for order
+summary: Retrieve all refunds for order
 operationId: RetrieveOrderRefundsRequest
 security: 
   -  OAuth token: []
@@ -73,7 +74,7 @@ responses:
                     description: Refund status code.
                     enum: [PENDING, CANCELED, FINALIZED]
   404:
-    description: NOT FOUND
+    description: Not Found
     content: 
       application/json: 
         schema: 

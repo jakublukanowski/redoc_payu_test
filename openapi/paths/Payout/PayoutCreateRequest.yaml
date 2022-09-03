@@ -1,7 +1,7 @@
 tags:
   - Payout
-summary: Create new payout
-description: Create new payout
+summary: Create payout
+description: Create payout
 operationId: PayoutCreateRequest
 security:
   - OAuth token: []

@@ -1,7 +1,7 @@
 tags: 
   - Payout
-summary: Retrieve Payout data
-description: Retrieve Payout data
+summary: Retrieve Payout
+description: Retrieve Payout
 operationId: PayoutRetrieveRequest
 security: 
   -  OAuth token: []
@@ -33,7 +33,7 @@ parameters:
     example: Bearer 3e5cac39-7e38-4139-8fd6-30adc06a61bd
 responses:
   200:
-    description: Created
+    description: OK
     content:
       application/json:
         schema:
@@ -63,13 +63,13 @@ responses:
         schema: 
           $ref: ../../components/responses/401.yaml
   403:
-    description: Unauthorized
+    description: Forbidden
     content: 
       application/json: 
         schema: 
           $ref: ../../components/responses/403.yaml
   404:
-    description: Unauthorized
+    description: Not found
     content: 
       application/json: 
         schema: 

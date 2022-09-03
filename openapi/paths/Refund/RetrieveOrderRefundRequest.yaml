@@ -1,6 +1,7 @@
 tags: 
   - Refund
-summary: Retrieve specific refund data
+summary: Retrieve specific refund for order
+description: Retrieve specific refund for order
 operationId: RetrieveOrderRefundRequest
 security: 
   -  OAuth token: []
@@ -61,7 +62,7 @@ responses:
             -  $ref: '../../components/schemas/refundSchemas/refundRetrievePending.yaml'
             -  $ref: '../../components/schemas/refundSchemas/refundRetrieveCanceled.yaml'
   404:
-    description: NOT FOUND
+    description: Not Found
     content: 
       application/json: 
         schema: 

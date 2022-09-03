@@ -1,7 +1,7 @@
 tags:
   - Order
-summary: Creating new order
-description: OrderCreateRequest
+summary: Create order
+description: Create order
 operationId: OrderCreateRequest
 security:
   - OAuth token: []
@@ -83,28 +83,11 @@ requestBody:
             $ref: ../../components/objects/Order/threeDsAuthentication.yaml
           credit:
             $ref: ../../components/objects/Order/credit.yaml
+          submerchant:
+            $ref: ../../components/objects/Order/submerchant.yaml
   description: Parameters for OrderCreateRequest
   required: true
 responses:
-  200:
-    description: OK
-    content:
-      application/json:
-        schema:
-          type: object
-          properties: 
-            status:
-              type: object
-              properties:
-                statusCode:
-                  type: string
-                  description: Response code
-            redirectUri:
-              type: string
-            orderId:
-              type: string
-            extOrderId:
-              type: string
   201:
     description: Created
     content:
@@ -157,32 +140,35 @@ responses:
               example: true
             threeDsProtocolVersion:
               type: string
-              enum: [3DS, 3DS2]
+              enum: [3DS1, 3DS2]
             orderId:
               type: string
               description: Order identifier given by PayU.
-            payMethods:
-              type: object
-              properties: 
-                card:
-                  type: object
-                  properties: 
-                    number:
-                      type: string
-                      description: Card number.
-                    expirationMonth:
-                      type: integer
-                      description: Card expiration month.
-                    expirationYear:
-                      type: integer
-                      description: Card expiration year.
-                type:
-                  type: string
-                value:
-                  type: string
             extOrderId:
               type: string
               description: Order identifier given by merchant.
+            payMethods:
+              type: object
+              properties: 
+                payMethod:
+                  type: object
+                  properties:
+                    card:
+                      type: object
+                      properties: 
+                        number:
+                          type: string
+                          description: Card number.
+                        expirationMonth:
+                          type: integer
+                          description: Card expiration month.
+                        expirationYear:
+                          type: integer
+                          description: Card expiration year.
+                    type:
+                      type: string
+                    value:
+                      type: string
         # examples: 
         #   success:
         #     summary: SUCCESS
