@@ -18,6 +18,8 @@ parameters:
     in: query
     example: loremIpsum
     required: true
+    schema:
+      type: string
   - name: Content-Type
     in: header
     description: Content type

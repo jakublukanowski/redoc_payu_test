@@ -6,7 +6,9 @@ operationId: PartnerMerchantRegistrationBoardingLink
 security: 
   -  OAuth token: []
 parameters:
-  - name: partnerPublicId
-    in: path
+  - name: partnerId
+    in: query
     example: loremIpsum
     required: true
+    schema:
+      type: string

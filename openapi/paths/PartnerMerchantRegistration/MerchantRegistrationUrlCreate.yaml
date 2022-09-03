@@ -6,7 +6,7 @@ operationId: PartnerMerchantRegistrationURLCreate
 security: 
   -  OAuth token: []
 parameters:
-  - name: firmId
+  - name: publicFirmId
     in: path
     example: loremIpsum
     required: true

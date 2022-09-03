@@ -2,7 +2,7 @@ tags:
   - Payment Facilitator Submerchant Registration
 summary: Payment Facilitator Submerchant Update
 description: Payment Facilitator Submerchant Update
-operationId: Payment Facilitator Submerchant Update
+operationId: PaymentFacilitatorSubmerchantUpdate
 security: 
   -  OAuth token: []
 parameters:

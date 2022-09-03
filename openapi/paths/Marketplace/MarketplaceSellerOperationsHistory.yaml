@@ -18,38 +18,56 @@ parameters:
     in: query
     example: loremIpsum
     required: false
+    schema:
+      type: string
   - name: type
     in: query
     example: loremIpsum
     required: false
+    schema:
+      type: string
   - name: dateFrom
     in: query
     example: loremIpsum
     required: false
+    schema:
+      type: string
   - name: dateTo
     in: query
     example: loremIpsum
     required: false
+    schema:
+      type: string
   - name: limit
     in: query
     example: loremIpsum
     required: false
+    schema:
+      type: string
   - name: offset
     in: query
     example: loremIpsum
     required: false
+    schema:
+      type: string
   - name: +sortBy
     in: query
     example: loremIpsum
     required: false
-  - name: currencyCode
+    schema:
+      type: string
+  - name: -sortBy
     in: query
-    example: -sortBy
+    example: loremIpsum
     required: false
+    schema:
+      type: string
   - name: Content-Type
     in: header
     description: Content type
     required: true
+    schema:
+      type: string
     schema:
       type: string
     style: simple

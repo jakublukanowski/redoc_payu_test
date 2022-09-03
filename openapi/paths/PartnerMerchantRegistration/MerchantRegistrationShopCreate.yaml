@@ -6,14 +6,14 @@ operationId: PartnerMerchantRegistrationShopCreate
 security: 
   -  OAuth token: []
 parameters:
-  #- name: loremIpsum
-  #  in: path
-  #  example: loremIpsum
-  #  required: false
-  #  content: 
-  #    application/json: 
-  #      schema: 
-  #        type: string
+  - name: publicFirmId
+    in: path
+    example: loremIpsum
+    required: true
+    content: 
+      application/json: 
+        schema: 
+          type: string
   - name: Content-Type
     in: header
     description: Content type
