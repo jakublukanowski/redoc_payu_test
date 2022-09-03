@@ -15,7 +15,7 @@ paths:
   /pl/standard/user/oauth/authorize:
     post:
       tags:
-        - Authorize payment
+        - Authorization
       summary: Create OAuth token
       description: >
         You authenticate with OAuth standard by obtaining a token, which is used
@@ -139,7 +139,7 @@ paths:
   /api/v2_1/orders:
     post:
       tags:
-        - Payment
+        - Order
       summary: Creating new order.
       description: OrderCreateRequest
       operationId: orderCreateRequest
@@ -726,7 +726,7 @@ paths:
   /api/v2_1/orders/{orderId}:
     get:
       tags:
-        - Payment
+        - Order
       operationId: orderId
       summary: Retrieve order data
       security:
@@ -872,7 +872,7 @@ paths:
                         description: Error description.
     delete:
       tags:
-        - Payment
+        - Order
       summary: Cancel waiting order.
       description: Cancel order
       operationId: orderCancel
@@ -968,7 +968,7 @@ paths:
   /api/v2_1/orders/{orderId}/status:
     put:
       tags:
-        - Payment
+        - Order
       summary: Complete waiting order.
       description: Capture order
       operationId: orderCapture
