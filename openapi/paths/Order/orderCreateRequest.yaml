@@ -72,7 +72,7 @@ requestBody:
             description: Marks the order as recurring payment - first or subsequent. "recurring" parameter cannot be used with "cardOnFile" parameter
             enum: [FIRST, STANDARD] 
           buyer:
-            $ref: ../../components/objects/Order/buyer.yaml
+            $ref: ../../components/objects/Order/Buyer.yaml
           products:
             $ref: ../../components/objects/Order/products.yaml
           payMethods:
