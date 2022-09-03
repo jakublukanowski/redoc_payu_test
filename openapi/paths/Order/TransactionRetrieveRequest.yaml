@@ -58,33 +58,20 @@ responses:
                     description: "Customer's IP address. Note: 0.0.0.0 is not accepted."
                     example: "127.0.0.1"
   400:
-    description: Error
+    description: Bad Request
     content:
       application/json:
         schema:
-          type: object
-          properties: 
-            status:
-              type: object
-              properties: 
-                statusCode:
-                  type: string
-                  example: ERROR
-  404:
-    description: Not Found
+          $ref: ../../components/responses/400.yaml
+  401:
+    description: Unauthorized
     content: 
       application/json: 
         schema: 
-          type: object
-          properties: 
-            status:
-              type: object
-              properties: 
-                statusCode:
-                  type: string
-                  description: Error type.
-                severity:
-                  type: string
-                statusDesc:
-                  type: string
-                  description: Error description.
+          $ref: ../../components/responses/401.yaml
+  404:
+    description: Unauthorized
+    content: 
+      application/json: 
+        schema: 
+          $ref: ../../components/responses/404.yaml

@@ -107,37 +107,21 @@ responses:
             properties:
               $ref: ../../components/objects/Order/properties.yaml
   400:
-    description: Error
+    description: Bad Request
     content:
       application/json:
         schema:
-          type: object
-          properties: 
-            status:
-              type: object
-              properties: 
-                statusCode:
-                  type: string
-                  example: ERROR
-            redirectUri:
-              type: string
-              example: "{payment_summary_redirection_url}"
-  404:
-    description: Not Found
+          $ref: ../../components/responses/400.yaml
+  401:
+    description: Unauthorized
     content: 
       application/json: 
         schema: 
-          type: object
-          properties: 
-            status:
-              type: object
-              properties: 
-                statusCode:
-                  type: string
-                  description: Error type.
-                severity:
-                  type: string
-                statusDesc:
-                  type: string
-                  description: Error description.
+          $ref: ../../components/responses/401.yaml
+  404:
+    description: Unauthorized
+    content: 
+      application/json: 
+        schema: 
+          $ref: ../../components/responses/404.yaml
     

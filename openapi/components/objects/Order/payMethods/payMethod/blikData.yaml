@@ -8,7 +8,7 @@ properties:
     type: string
     description: UID token value assigned by the merchant. This field can be used only during token registration
   register:
-    type: bolean
+    type: boolean
     description: Set to true specifies that an alias registration request will be sent. Set to false will result in payment with a T6 authorization code without token registration.
   appKey:
     type: string

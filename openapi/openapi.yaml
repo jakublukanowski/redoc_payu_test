@@ -40,6 +40,15 @@ paths:
   /api/v2_1/orders/{orderId}/refunds/{refundId}:
     get: 
       $ref: paths/Refund/RetrieveOrderRefundRequest.yaml
+  /api/v2_1/payouts:
+    post:
+      $ref: paths/payouts/PayoutCreateRequest.yaml
+  /api/v2_1/payouts/{payoutId}:
+    get:
+      $ref: paths/payouts/PayoutRetrieveRequest.yaml
+  /api/v2_1/shops/{shop_id}:
+    get:
+      $ref: paths/Shop/RetrieveShopBalanceRequest.yaml
 components:
   securitySchemes: 
     OAuth token:
