@@ -2,7 +2,7 @@ tags:
   - Marketplace Verification
 summary: Marketplace Verification - Verification Transfer
 description: Marketplace Verification - Verification Transfer
-operationId: Marketplace Verification - Verification Transfer
+operationId: MarketplaceVerificationVerificationTransfer
 security: 
   -  OAuth token: []
 parameters:
