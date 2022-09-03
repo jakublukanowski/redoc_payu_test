@@ -37,19 +37,21 @@ responses:
         schema:
           type: object
           properties: 
-            payout: object
-            properties: 
-              payoutId:
-                type: string
-              extPayoutId:
-                type: string
-              status:
-                type: string
-                enum: [PENDING, WAITING, CANCELLED, REALIZED]  
-            status: object
-            properties:
-              statusCode:
-                type: string
+            payout:
+              type: object
+              properties: 
+                payoutId:
+                  type: string
+                extPayoutId:
+                  type: string
+                status:
+                  type: string
+                  enum: [PENDING, WAITING, CANCELLED, REALIZED]  
+            status:
+              type: object
+              properties:
+                statusCode:
+                  type: string
   400:
     description: Bad Request
     content:
