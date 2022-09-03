@@ -42,7 +42,7 @@ paths:
       $ref: paths/Refund/RetrieveOrderRefundRequest.yaml
   /api/v2_1/payouts:
     post:
-      $ref: paths/Payput/PayoutCreateRequest.yaml
+      $ref: paths/Payout/PayoutCreateRequest.yaml
   /api/v2_1/payouts/{payoutId}:
     get:
       $ref: paths/Payout/PayoutRetrieveRequest.yaml
