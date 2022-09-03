@@ -1,8 +1,8 @@
 tags: 
   - Notifications
 summary: Structure of notification about order status change sent from PayU to URL address provided by Merchant
-description: LoremIpsum
-operationId: LoremIpsum
+description: Marketplace Verification Status Change Notification
+operationId: Marketplace Verification Status Change Notification
 security: 
   -  OAuth token: []
 parameters:

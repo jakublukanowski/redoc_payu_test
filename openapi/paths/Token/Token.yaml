@@ -1,12 +1,12 @@
 tags: 
   - Card token deletion
-summary: LoremIpsum
-description: LoremIpsum
-operationId: LoremIpsum
+summary: Card token deletion
+description: Card token deletion
+operationId: TokenDeleteRequest
 security: 
   -  OAuth token: []
 parameters:
-  - name: loremIpsum
+  - name: token
     in: path
     example: loremIpsum
     required: false

@@ -55,7 +55,7 @@ paths:
   /api/v2_1/tokens/{token}}:
     delete:
       $ref: paths/Token/Token.yaml
-  /api/v2_1/fx-providers/ecb/fx-rates?termCurrency={currencyCode}:
+  /api/v2_1/fx-providers/ecb/fx-rates:
     get:
       $ref: paths/FX_Reference/FxReference.yaml
   /api/v2_1/mcp-partners/{mcpPartnerId}/fx-table:
@@ -159,19 +159,19 @@ paths:
       $ref: paths/PaymentFacilitatorSubmerchantRegistration/PaymentFacilitatorSubmerchantUpdate.yaml
     get:
       $ref: paths/PaymentFacilitatorSubmerchantRegistration/PaymentFacilitatorSubmerchantGet.yaml
-  none:
+  /none:
     post:
       $ref: paths/Notifications/OrderNotification.yaml
-  none1:
+  /none1:
     post:
       $ref: paths/Notifications/RefundNotification.yaml
-  none2:
+  /none2:
     post:
       $ref: paths/Notifications/StatementNotification.yaml
-  none3:
+  /none3:
     post:
-      $ref: paths/Notifications/PaymentFacilitaotrSubmerchantStatusChangeNotification.yaml
-  none4:
+      $ref: paths/Notifications/PaymentFacilitatorSubmerchantStatusChangeNotification.yaml
+  /none4:
     post:
       $ref: paths/Notifications/MarketplaceVerificationStatusChangeNotification.yaml
 components:

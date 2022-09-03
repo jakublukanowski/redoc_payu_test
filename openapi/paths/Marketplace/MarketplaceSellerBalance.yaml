@@ -2,7 +2,7 @@ tags:
   - Marketplace Seller
 summary: Marketplace Seller Balance
 description: Marketplace Seller Balance
-operationId: LoremIpsum
+operationId: Marketplace Seller Balance
 security: 
   -  OAuth token: []
 parameters:

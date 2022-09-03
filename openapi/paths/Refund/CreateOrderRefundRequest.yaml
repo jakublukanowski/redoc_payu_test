@@ -2,7 +2,7 @@ tags:
   - Refund
 summary: Create refund
 description: Create new refund - this request is idempotent, so if exactly same data will be provided, response will return data of already previously created refund instead of creating new refund
-operationId: createRefundRequest
+operationId: OrderRefundCreateRequest
 security:
   - OAuth token: []
 parameters:

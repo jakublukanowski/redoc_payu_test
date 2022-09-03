@@ -1,8 +1,8 @@
 tags: 
-  - Payment Facilitator Merchant Registration
-summary: LoremIpsum
-description: LoremIpsum
-operationId: LoremIpsum
+  - Payment Facilitator Submerchant Registration
+summary: Payment Facilitator Submerchant Get
+description: Payment Facilitator Submerchant Get
+operationId: Payment Facilitator Submerchant Get
 security: 
   -  OAuth token: []
 parameters:

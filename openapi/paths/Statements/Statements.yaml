@@ -1,8 +1,8 @@
 tags: 
   - Statements
-summary: LoremIpsum
-description: LoremIpsum
-operationId: LoremIpsum
+summary: Stetement retrieval via API
+description: Stetement retrieval via API
+operationId: StatementRetrieveRequest
 security: 
   -  OAuth token: []
 parameters:

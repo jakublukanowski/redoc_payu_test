@@ -2,7 +2,7 @@ tags:
   - Marketplace Seller
 summary: Marketplace Seller Operations History
 description: Marketplace Seller Operations History
-operationId: LoremIpsum
+operationId: Marketplace Seller Operations History
 security: 
   -  OAuth token: []
 parameters:

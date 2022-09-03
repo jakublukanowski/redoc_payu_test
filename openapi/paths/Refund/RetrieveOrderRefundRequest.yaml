@@ -2,7 +2,7 @@ tags:
   - Refund
 summary: Retrieve specific refund for order
 description: Retrieve specific refund for order
-operationId: RetrieveOrderRefundRequest
+operationId: OrderRefundRetrieveRequest
 security: 
   -  OAuth token: []
 parameters:

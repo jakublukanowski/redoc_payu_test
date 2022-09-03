@@ -1,8 +1,8 @@
 tags: 
   - Card Installments Proposal
-summary: LoremIpsum
-description: LoremIpsum
-operationId: LoremIpsum
+summary: Card Installments Proposal
+description: Card Installments Proposal
+operationId: Card Installments Proposal
 security: 
   -  OAuth token: []
 parameters:

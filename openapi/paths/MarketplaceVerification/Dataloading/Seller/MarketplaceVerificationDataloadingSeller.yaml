@@ -1,8 +1,8 @@
 tags: 
   - Marketplace Verification
-summary: Marketplace Verification
-description: Marketplace Verification
-operationId: LoremIpsum
+summary: Marketplace Verification Dataloading Seller
+description: Marketplace Verification Dataloading Seller
+operationId: Marketplace Verification Dataloading Seller
 security: 
   -  OAuth token: []
 parameters:

@@ -2,7 +2,7 @@ tags:
   - Partner Merchant Registration
 summary: Partner Merchant Registration POS Classic Create
 description: Partner Merchant Registration POS Classic Create
-operationId: LoremIpsum
+operationId: Partner Merchant Registration POS Classic Create
 security: 
   -  OAuth token: []
 parameters:

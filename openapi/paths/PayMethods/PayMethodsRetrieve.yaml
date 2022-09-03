@@ -7,7 +7,7 @@ security:
   -  OAuth token: []
 parameters:
   - name: lang
-    in: path
+    in: query
     example: pl
     description: Language code, ISO-639-1 compliant, determins language of description in "name" field
     required: false
@@ -41,13 +41,13 @@ responses:
           description: Section containing payment methods available for Buyer
           properties: 
             blikTokens:
-              $ref: ../../responses/PayMethods/200/blikTokens.yaml
+              $ref: ../../components/responses/PayMethods/200/blikTokens.yaml
             cardTokens:
-              $ref: ../../responses/PayMethods/200/cardTokens.yaml
+              $ref: ../../components/responses/PayMethods/200/cardTokens.yaml
             pexTokens:
-              $ref: ../../responses/PayMethods/200/pexTokens.yaml
+              $ref: ../../components/responses/PayMethods/200/pexTokens.yaml
             payByLinks:
-              $ref: ../../responses/PayMethods/200/payByLinks.yaml
+              $ref: ../../components/responses/PayMethods/200/payByLinks.yaml
             status:
               type: object
               properties: 

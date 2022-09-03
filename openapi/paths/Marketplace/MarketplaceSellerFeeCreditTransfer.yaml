@@ -2,7 +2,7 @@ tags:
   - Marketplace Seller
 summary: Marketplace Seller Fee Credit Transfer
 description: Marketplace Seller Fee Credit Transfer
-operationId: LoremIpsum
+operationId: Marketplace Seller Fee Credit Transfer
 security: 
   -  OAuth token: []
 parameters:

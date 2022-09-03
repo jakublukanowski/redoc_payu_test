@@ -2,7 +2,7 @@ tags:
   - Marketplace Seller
 summary: Marketplace Seller Fee Debit Transfer
 description: Marketplace Seller Fee Debit Transfer
-operationId: LoremIpsum
+operationId: Marketplace Seller Fee Debit Transfer
 security: 
   -  OAuth token: []
 parameters:

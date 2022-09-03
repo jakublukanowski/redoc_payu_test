@@ -1,8 +1,8 @@
 tags: 
   - Multi-Currency pricing  
-summary: LoremIpsum
-description: LoremIpsum
-operationId: LoremIpsum
+summary: Multi-Currency pricing
+description: Multi-Currency pricing
+operationId: Multi-Currency pricing
 security: 
   -  OAuth token: []
 parameters:

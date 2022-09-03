@@ -2,7 +2,7 @@ tags:
   - Marketplace Verification
 summary: Marketplace Verification with Verification Transfer
 description: Marketplace Verification with Verification Transfer
-operationId: LoremIpsum
+operationId: Marketplace Verification with Verification Transfer
 security: 
   -  OAuth token: []
 parameters:

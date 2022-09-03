@@ -2,7 +2,7 @@ tags:
   - Shop
 summary: Retrieve Shop balance
 description: Retrieve Shop balance
-operationId: RetrieveShopBalanceRequest
+operationId: ShopBalanceRetrieveRequest
 security: 
   -  OAuth token: []
 parameters:

@@ -1,8 +1,8 @@
 tags: 
   - Marketplace Verification
-summary: Marketplace Verification with Verification Transfer
-description: Marketplace Verification with Verification Transfer
-operationId: LoremIpsum
+summary: Marketplace Verification Payoneer
+description: Marketplace Verification Payoneer
+operationId: Marketplace Verification Payoneer
 security: 
   -  OAuth token: []
 parameters:

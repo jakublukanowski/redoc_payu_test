@@ -2,7 +2,7 @@ tags:
   - Marketplace Seller
 summary: Marketplace Seller Status
 description: Marketplace Seller Status
-operationId: LoremIpsum
+operationId: Marketplace Seller Status
 security: 
   -  OAuth token: []
 parameters:

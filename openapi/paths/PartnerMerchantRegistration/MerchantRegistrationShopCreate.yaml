@@ -2,7 +2,7 @@ tags:
   - Partner Merchant Registration
 summary: Partner Merchant Registration Shop Create
 description: Partner Merchant Registration Shop Create
-operationId: LoremIpsum
+operationId: Partner Merchant Registration Shop Create
 security: 
   -  OAuth token: []
 parameters:
