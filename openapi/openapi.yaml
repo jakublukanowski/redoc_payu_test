@@ -20,25 +20,27 @@ paths:
       $ref: paths/authorize.yaml
   /api/v2_1/orders:
     post:
-      $ref: paths/payment/orderCreateRequest.yaml
+      $ref: paths/Order/OrderCreateRequest.yaml
   /api/v2_1/orders/{orderId}:
     get:
-      $ref: paths/payment/orderRetrieveRequest.yaml
+      $ref: paths/Order/OrderRetrieveRequest.yaml
     delete:
-      $ref: paths/payment/orderCancel.yaml
+      $ref: paths/Order/OrderCancelRequest.yaml
   /api/v2_1/orders/{orderId}/status:
     put: 
-      $ref: paths/payment/orderCapture.yaml
+      $ref: paths/Order/OrderCaptureRequest.yaml
+  /api/v2_1/orders/{orderId}/transactions:
+    put: 
+      $ref: paths/Order/TransactionRetrieveRequest.yaml
   /api/v2_1/orders/{orderId}/refunds:
     post:
-      $ref: paths/refund/createRefund.yaml
+      $ref: paths/Refund/CreateOrderRefundRequest.yaml
     get: 
-      $ref: paths/refund/retrieveOrderRefundsData.yaml
+      $ref: paths/Refund/RetrieveOrderRefundsRequest.yaml
   /api/v2_1/orders/{orderId}/refunds/{refundId}:
     get: 
-      $ref: paths/refund/retrieveRefund.yaml
+      $ref: paths/Refund/RetrieveOrderRefundRequest.yaml
 components:
   securitySchemes: 
     OAuth token:
       $ref: ./components/securitySchemes/oauth.yaml
-      

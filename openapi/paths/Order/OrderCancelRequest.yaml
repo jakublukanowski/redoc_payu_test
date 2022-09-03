@@ -1,8 +1,8 @@
 tags:
-  - Payment
-summary: Complete waiting order
-description: Capture order
-operationId: orderCapture
+  - Order
+summary: Cancel waiting order
+description: Cancel order
+operationId: orderCancelRequest
 security:
   - OAuth token: []
 parameters:
@@ -31,22 +31,6 @@ parameters:
       type: string
     style: simple
     example: Bearer 3e5cac39-7e38-4139-8fd6-30adc06a61bd
-requestBody:
-  content:
-    application/json:
-      schema:
-        type: object
-        required:
-          - orderId
-          - orderStatus
-        properties:
-          orderId: 
-            type: string
-            description: Identifier of the order you want to update.
-          orderStatus:
-            type: string
-            description: Status of the order after update.
-            example: COMPLETED
 responses: 
   200: 
     description: SUCCESS
@@ -55,6 +39,12 @@ responses:
         schema: 
           type: object
           properties: 
+            orderId:
+              type: string
+              description: Order identifier in PayU's system.
+            extOrderId:
+              type: string
+              description: Order identifier in merchant's system.
             status:
               type: object
               properties: 
@@ -62,10 +52,6 @@ responses:
                   type: string
                   description: Status after update.
                   example: SUCCESS
-                statusDesc:
-                  type: string
-                  description: Status message.
-                  example: "Status was updated"
   400:
     description: Bad Request
     content:
@@ -85,6 +71,24 @@ responses:
                 codeLiteral:
                   type: string
                   description: Cause of the error.
+                statusDesc:
+                  type: string
+                  description: Error description.
+  404:
+    description: Not Found
+    content: 
+      application/json: 
+        schema: 
+          type: object
+          properties: 
+            status:
+              type: object
+              properties: 
+                statusCode:
+                  type: string
+                  description: Error type.
+                severity:
+                  type: string
                 statusDesc:
                   type: string
                   description: Error description.

@@ -1,7 +1,7 @@
 tags: 
-  - Order
-operationId: OrderRetrieveRequest
-summary: Retrieve order data
+  - Payment
+operationId: TransactionRetrieveRequest
+summary: Retrieve transaction data
 security: 
   -  OAuth token: []
 parameters:
