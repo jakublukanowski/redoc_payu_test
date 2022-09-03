@@ -82,13 +82,12 @@ paths:
   /api/v2_1/customers/ext/{extCustomerId}/feeCreditTransfer:
     get:
       $ref: paths/Marketplace/MarketplaceSellerFeeCreditTransfer.yaml
-  /api/aml-verification/v1/verification:
-    get:
-      $ref: paths/MarketplaceVerification/MarketplaceVerificationGet.yaml
   /api/aml-verification/v1/verification-advice/{Id}:
     get:
       $ref: paths/MarketplaceVerification/MarketplaceVerificationAdvice.yaml
   /api/aml-verification/v1/verification:
+    get:
+      $ref: paths/MarketplaceVerification/MarketplaceVerificationGet.yaml
     post:
       $ref: paths/MarketplaceVerification/MarketplaceVerificationCreate.yaml
   /api/aml-verification/v1/dataloading/seller:
