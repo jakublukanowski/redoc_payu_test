@@ -28,4 +28,4 @@ properties:
     description: Language code, ISO-639-1 compliant. Denotes the language version of PayU hosted payment page and of e-mail messages sent from PayU to the payer.
     example: pl
   delivery:
-    $ref: BuyerDelivery.yaml
+    $ref: buyer/delivery.yaml
