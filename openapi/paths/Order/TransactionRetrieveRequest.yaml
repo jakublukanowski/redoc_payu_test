@@ -1,5 +1,5 @@
 tags: 
-  - Payment
+  - Order
 summary: Retrieve transaction data
 description: Retrieve transaction data
 operationId: TransactionRetrieveRequest
@@ -53,53 +53,10 @@ responses:
                     type: string
                     description: External order ID (assigned by the shop).
                     example: "343242"
-                  orderCreateDate:
-                    type: string
-                    description: Order creation timestamp.
-                    example: "2014-10-27T14:58:17.443+01:00"
-                  notifyUrl:
-                    type: string
-                    description: Address for sending notifications.
-                    example: http://localhost/OrderNotify/
                   customerIp:
                     type: string
                     description: "Customer's IP address. Note: 0.0.0.0 is not accepted."
                     example: "127.0.0.1"
-                  merchantPosId:
-                    type: string
-                    description: Point of sale ID.
-                    example: "145227"
-                  description:
-                    type: string
-                    description: 	Description for order.
-                    example: New Order
-                  validityTime:
-                    type: string
-                    description: Duration for the validity of an order (in seconds), during which time payment must be made.
-                    default: "86400"
-                  currencyCode:
-                    type: string
-                    description: Currency code compliant with ISO 4217.
-                    example: PLN
-                  totalAmount:
-                    type: string
-                    description: Total price of the order.
-                    example: "3200"
-                  buyer:
-                    $ref: ../../components/objects/Order/buyer.yaml
-                  payMethod:
-                    type: object
-                    description: Used payment method
-                    properties: 
-                      amount:
-                        type: string
-                        description: Order amount.
-                      type: 
-                        type: string
-                        description: Payment method code.
-                  status:
-                    type: string
-                    description: Order status.
   400:
     description: Error
     content:
