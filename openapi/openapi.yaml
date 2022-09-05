@@ -52,7 +52,7 @@ paths:
   /api/v2_1/payouts/{payoutId}:
     get:
       $ref: paths/Payout/PayoutRetrieveRequest.yaml
-  /api/v2_1/tokens/{token}}:
+  /api/v2_1/tokens/{token}:
     delete:
       $ref: paths/Token/Token.yaml
   /api/v2_1/fx-providers/ecb/fx-rates:
