@@ -10,8 +10,8 @@ info:
   description:
     $ref: ./info-description.md
 servers:
-  - url: 'https://secure.payu.com'
-    description: Production Server
+  #- url: 'https://secure.payu.com'
+  #  description: Production Server
   - url: 'https://secure.snd.payu.com'
     description: Sandbox Test Server
 paths:
