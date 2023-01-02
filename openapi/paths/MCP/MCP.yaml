@@ -10,6 +10,11 @@ parameters:
     in: path
     example: 6283a549-8b1a-430d-8a62-eea64327440e
     required: true
+    content:
+      application/json:
+        schema:
+          type: string
+          description: Currency code compliant with ISO 4217
   - name: Content-Type
     in: header
     description: Content type
