@@ -48,8 +48,6 @@ responses:
                   payMethod:
                     type: object
                     description: Chosen payment method
-                    items:
-                      type: object
                       properties:
                         value:
                           type: string
