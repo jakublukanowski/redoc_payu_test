@@ -48,6 +48,8 @@ responses:
                   payMethod:
                     type: object
                     description: Chosen payment method
+                    propeties:
+                      type: object
                       properties:
                         value:
                           type: string
@@ -66,7 +68,7 @@ responses:
                       properties:
                         cardData:
                           type: object
-                          items:
+                          properties:
                             type: object
                             properties:
                               cardNumberMasked:
@@ -120,7 +122,7 @@ responses:
                   cardInstallmentProposal:
                     type: object
                     description: Chosen payment method
-                    items:
+                    properties:
                       type: object
                       properties:
                         proposalId:
