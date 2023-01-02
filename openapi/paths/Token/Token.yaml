@@ -8,7 +8,7 @@ security:
 parameters:
   - name: token
     in: path
-    example: loremIpsum
+    example: TOKC_2IKR5GKPBLZP7XMM2MNOWSSZQLP
     required: true
     content: 
       application/json: 
@@ -31,15 +31,24 @@ parameters:
     style: simple
     example: Bearer 3e5cac39-7e38-4139-8fd6-30adc06a61bd
 responses:
-  200:
-    description: OK
+  204:
+    description: No Content
+  400:
+    description: Bad Request
     content:
       application/json:
         schema:
           type: object
           properties:
-            loremIpsum:
-              type: string
+            status:
+              type: object
+              properties:
+                statusCode:
+                  type: string
+                  description: Error type.
+                statusDesc:
+                  type: string
+                  description: Error description.
   401:
     description: Unauthorized
     content: 
