@@ -8,7 +8,7 @@ properties:
         description: Error type.
       severity:
         type: string
-        description: erroer severity type.
+        description: error severity type.
       statusDesc:
         type: string
         description: Error description.

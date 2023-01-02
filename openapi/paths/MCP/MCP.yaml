@@ -69,5 +69,3 @@ responses:
           $ref: ../../components/responses/401.yaml
   404:
     description: Not found
-    content:
-      application/json:

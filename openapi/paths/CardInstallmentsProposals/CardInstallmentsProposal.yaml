@@ -23,7 +23,7 @@ parameters:
     style: simple
     example: application/json
   - name: Authorization
-    in:  header
+    in: header
     description: Auth token
     required: true
     schema:
@@ -49,7 +49,7 @@ responses:
             installmentOptionFormat:
               type: string
               example: VARYING_NUMBER_OF_OPTIONS
-              ENUM: [VARYING_NUMBER_OF_OPTIONS,VARYING_NUMBER_OF_INSTALLMENTS]
+              enum: [VARYING_NUMBER_OF_OPTIONS,VARYING_NUMBER_OF_INSTALLMENTS]
               description: Installment option format
             currencyCode:
               type: string

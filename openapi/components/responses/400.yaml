@@ -8,7 +8,7 @@ properties:
         description: Error type.
       severity:
         type: string
-        description: erroer severity type.
+        description: error severity type.
       code:
         type: string
         description: Identification code of specific error.
