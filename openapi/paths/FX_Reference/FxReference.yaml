@@ -56,7 +56,7 @@ responses:
                     type: string
                     description: final currency - this is the currnecy of the shop at which the payment will be processed (currency set for the shop in the PayU system)
                   midRate:
-                    type: float
+                    type: number
                     description: midrate to be used to calculate the percentage mark-up
   401:
     description: Unauthorized
