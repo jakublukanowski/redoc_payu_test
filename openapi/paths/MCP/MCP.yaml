@@ -55,6 +55,9 @@ responses:
                   baseCurrency:
                     type: string
                     description: initial currency - this is the currency in which the payer will be charged (card settlement currency)
+                  exchangeRate:
+                    type: number
+                    description: exchange rate from base currency to term currency
                   termCurrency:
                     type: string
                     description: final currency - this is the currnecy of the shop at which the payment will be processed (currency set for the shop in the PayU system)
@@ -64,3 +67,9 @@ responses:
       application/json: 
         schema: 
           $ref: ../../components/responses/401.yaml
+  404:
+    description: Unauthorized
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/responses/404.yaml
