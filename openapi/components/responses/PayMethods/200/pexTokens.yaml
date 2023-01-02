@@ -13,7 +13,7 @@ items:
       type: string
       example: TOKE_XPJ4UKJGHVRPMQPGB6X1JJQCUSS
     name:
-      type: stringe
+      type: string
       example: account name set by the user
     brandImageUrl:
       type: string
