@@ -8,7 +8,7 @@ security:
 parameters:
   - name: termCurrency
     in: query
-    example: loremIpsum
+    example: PLN
     required: true
     content: 
       application/json: 
@@ -39,8 +39,25 @@ responses:
         schema:
           type: object
           properties:
-            loremIpsum:
+            effectiveDate:
               type: string
+              example: 2023-01-03
+              description: reference rate table validity. You need to refresh the table daily
+            fxRates:
+              type: array
+              description: Section containing pairs of chosen term currency and base currencies
+              items:
+                type: object
+                properties:
+                  baseCurrency:
+                    type: string
+                    description: initial currency - this is the currency in which the payer will be charged (card settlement currency)
+                  termCurrency:
+                    type: string
+                    description: final currency - this is the currnecy of the shop at which the payment will be processed (currency set for the shop in the PayU system)
+                  midRate:
+                    type: float
+                    description: midrate to be used to calculate the percentage mark-up
   401:
     description: Unauthorized
     content: 
