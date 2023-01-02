@@ -18,7 +18,6 @@ parameters:
   - name: Content-Type
     in: header
     description: Content type
-    required: true
     schema:
       type: string
     style: simple
