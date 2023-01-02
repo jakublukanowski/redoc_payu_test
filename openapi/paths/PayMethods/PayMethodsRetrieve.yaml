@@ -11,10 +11,9 @@ parameters:
     example: pl
     description: Language code, ISO-639-1 compliant, determins language of description in "name" field
     required: false
-    content: 
-      application/json: 
-        schema: 
-          type: string
+    schema:
+      type: string
+    style: simple
   - name: Content-Type
     in: header
     description: Content type

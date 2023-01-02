@@ -10,11 +10,10 @@ parameters:
     in: query
     example: PLN
     required: true
-    content: 
-      application/json: 
-        schema: 
-          type: string
-          description: Currency code compliant with ISO 4217
+    schema:
+      type: string
+    style: simple
+    description: Currency code compliant with ISO 4217
   - name: Content-Type
     in: header
     description: Content type
