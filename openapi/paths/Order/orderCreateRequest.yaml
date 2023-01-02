@@ -43,21 +43,21 @@ requestBody:
           additionalDescription:
             type: string
             description: Additional description of the order
-            example:
+            example: Additional description of order
           visibleDescription:
             type: string
             maxLength: 80
             description: Order/Payment description visible for Buyer on the PayU payment page
-            example:
+            example: Payment description
           statementDescription:
             type: string
             maxLength: 22
             description: Payment recipient name followed by payment description (order ID, ticket number etc) visible on card statement. The name should be easy to recognize by the cardholder. If field is not provided, static name configured by PayU will be used
-            example:
+            example: Statement Description
           extOrderId:
             type: string
             description: ID of an order used in merchant system. Order identifier assigned by the merchant. It enables merchants to find a specific order in their system. This value must be unique within a single POS
-            example:
+            example: my_external_order_id
           currencyCode:
             type: string
             description: Currency code compliant with ISO 4217 (e.g EUR)

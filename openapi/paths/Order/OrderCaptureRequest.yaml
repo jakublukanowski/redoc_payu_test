@@ -42,10 +42,11 @@ requestBody:
         properties:
           orderId: 
             type: string
-            description: Identifier of the order you want to update.
+            description: Identifier of the order you want to update
+            example: VVLR1HXK2S160929GUEST000P01
           orderStatus:
             type: string
-            description: Status of the order after update.
+            description: Status of the order after update
             example: COMPLETED
 responses: 
   200: 
