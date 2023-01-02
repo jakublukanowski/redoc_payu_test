@@ -54,13 +54,13 @@ responses:
                 properties:
                   baseCurrency:
                     type: string
-                    description: initial currency - this is the currency in which the payer will be charged (card settlement currency)
+                    description: initial currency code - this is the currency in which the payer will be charged (card settlement currency) compliant with ISO 4217
                   exchangeRate:
                     type: number
                     description: exchange rate from base currency to term currency
                   termCurrency:
                     type: string
-                    description: final currency - this is the currnecy of the shop at which the payment will be processed (currency set for the shop in the PayU system)
+                    description: final currency code - this is the currnecy of the shop at which the payment will be processed (currency set for the shop in the PayU system) compliant with ISO 4217
   401:
     description: Unauthorized
     content: 
@@ -68,8 +68,6 @@ responses:
         schema: 
           $ref: ../../components/responses/401.yaml
   404:
-    description: Unauthorized
+    description: Not found
     content:
       application/json:
-        schema:
-          $ref: ../../components/responses/404.yaml

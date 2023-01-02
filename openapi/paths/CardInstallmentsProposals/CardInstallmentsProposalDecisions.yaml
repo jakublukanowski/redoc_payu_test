@@ -8,12 +8,20 @@ security:
 parameters:
   - name: proposalId
     in: path
-    example: loremIpsum
+    example: 5aff3ba8-0c37-4da1-ba4a-4ff24bcc2eed
     required: true
-    content: 
-      application/json: 
-        schema: 
-          type: string
+requestBody:
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          optionId:
+            type: string
+            description: optional, required for VARYING_NUMBER_OF_OPTIONS format
+          numberOfInstallments:
+            type: number
+            description: optional, required for VARYING_NUMBER_OF_INSTALLMENTS format
   - name: Content-Type
     in: header
     description: Content type
@@ -31,15 +39,8 @@ parameters:
     style: simple
     example: Bearer 3e5cac39-7e38-4139-8fd6-30adc06a61bd
 responses:
-  200:
-    description: OK
-    content:
-      application/json:
-        schema:
-          type: object
-          properties:
-            loremIpsum:
-              type: string
+  204:
+    description: No Content
   401:
     description: Unauthorized
     content: 
