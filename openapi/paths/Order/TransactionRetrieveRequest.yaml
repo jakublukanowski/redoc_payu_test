@@ -46,13 +46,13 @@ responses:
                 type: object
                 properties:
                   payMethod:
-                    type: object
+                    type: string
                     description: Chosen payment method
                     properties:
                       value:
                         type: string
-                        description: Chosen payment method.
-                        example: "c"
+                        description: Chosen payment method
+                        example: c
                   paymentFlow:
                     type: string
                     description: Payment flow of of payment (for card and card based instruments payments)
