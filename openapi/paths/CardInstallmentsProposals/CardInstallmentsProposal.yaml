@@ -124,3 +124,5 @@ responses:
     description: Not found
     content:
       application/json:
+        schema:
+          type: string

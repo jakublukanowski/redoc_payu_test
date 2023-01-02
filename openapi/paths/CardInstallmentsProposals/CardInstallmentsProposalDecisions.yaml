@@ -10,6 +10,10 @@ parameters:
     in: path
     example: 5aff3ba8-0c37-4da1-ba4a-4ff24bcc2eed
     required: true
+    content:
+      application/json:
+        schema:
+          type: string
   - name: Authorization
     in: header
     description: Auth token
