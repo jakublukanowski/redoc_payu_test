@@ -48,13 +48,11 @@ responses:
                   payMethod:
                     type: object
                     description: Chosen payment method
-                    propeties:
-                      type: object
-                      properties:
-                        value:
-                          type: string
-                          description: Chosen payment method.
-                          example: "c"
+                    properties:
+                      value:
+                        type: string
+                        description: Chosen payment method.
+                        example: "c"
                   paymentFlow:
                     type: string
                     description: Payment flow of of payment (for card and card based instruments payments)
@@ -68,7 +66,7 @@ responses:
                       properties:
                         cardData:
                           type: object
-                          properties:
+                          items:
                             type: object
                             properties:
                               cardNumberMasked:
@@ -122,7 +120,7 @@ responses:
                   cardInstallmentProposal:
                     type: object
                     description: Chosen payment method
-                    properties:
+                    items:
                       type: object
                       properties:
                         proposalId:
