@@ -8,18 +8,18 @@ security:
 parameters:
   - name: lang
     in: query
-    example: pl
+    example: lang=pl
     description: Language code, ISO-639-1 compliant, determins language of description in "name" field
     required: false
     schema:
-      type: lang
+      type: string
     style: simple
   - name: Content-Type
     in: header
     description: Content type
     required: true
     schema:
-      type: application/json
+      type: string
     style: simple
     example: application/json
   - name: Authorization

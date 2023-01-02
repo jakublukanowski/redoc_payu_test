@@ -8,7 +8,7 @@ security:
 parameters:
   - name: termCurrency
     in: query
-    example: PLN
+    example: termCurrency=PLN
     required: true
     schema:
       type: string

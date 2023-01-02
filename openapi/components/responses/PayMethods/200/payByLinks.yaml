@@ -5,14 +5,20 @@ items:
   properties: 
     value:
       type: string
+      example: sgb
     brandImageUrl:
       type: string
+      example: https://static.payu.com/images/mobile/logos/pbl_sgb_off.png
     name:
       type: string
+      example: SGB Bank
     status:
       type: string
       enum: [ENABLED, DISABLED, TEMPORARY_DISABLED]
+      example: DISABLED
     minAmount:
       type: number
+      example: 50
     maxAmount:
       type: number
+      example: 99999999
