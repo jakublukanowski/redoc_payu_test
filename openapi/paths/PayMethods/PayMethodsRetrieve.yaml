@@ -9,12 +9,15 @@ parameters:
   - name: lang
     in: query
     example: lang=pl
-    value: {"lang": "pl"}
     description: Language code, ISO-639-1 compliant, determins language of description in "name" field
     required: false
     schema:
       type: string
     style: simple
+    examples:
+      lang:
+        summary: lang parameter value example
+        value: {"lang": "pl"}
   - name: Content-Type
     in: header
     description: Content type
