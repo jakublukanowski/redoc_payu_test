@@ -3,20 +3,22 @@ required: [type, value]
 properties: 
   type:
     type: string
-    description: Payment method type.
+    description: Payment method type
     enum: [PBL, CARD_TOKEN, PAYMENT_WALL, BLIK_AUTHORIZATION_CODE, BLIK_TOKEN]
+    example: PBL
   value:
     type: string
-    description: Payment type for PBL, CARD_TOKEN.
+    description: Payment type value, BLIK T6 code or token of tokenised payment method
     example: c
   authorizationCode:
     type: string
-    description: "Optional, usage differs depending on payment method. For BLIK integrated transparently: enables to collect 6-digit BLIK code on your website instead of redirecting to BLIK."
-    example: "777123"
+    description: Optional, usage differs depending on payment method. For BLIK integrated transparently: enables to collect 6-digit BLIK code on your website instead of redirecting to BLIK, for Visa Checkout integrated tranparently: carries callId param
+    example: 777123
   specificData:
     $ref: payMethod/specificData.yaml
   amount:
     type: string
     description: Additional information required for Marketplace integration - must be equal to totalAmount as sum of amount parameters objects in ShoppingCards array
+    example: 9999
   blikData:
     $ref: payMethod/blikData.yaml

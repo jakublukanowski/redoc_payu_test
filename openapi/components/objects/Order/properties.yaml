@@ -6,6 +6,7 @@ items:
     name:
       type: string
       description: 	Static value. The payment identifier, displayed on transaction statements as "Trans ID" and within the transaction search option in the Management Panel.
+      enum: [PAYMENT_ID]
       example: PAYMENT_ID
     value:
       type: string

@@ -1,19 +1,22 @@
 type: object
-description: Additional data for BLIK payment with T6 or token.
+description: Additional data for BLIK payment with T6 or token
 properties: 
   aliasLabelProposal:
     type: string
     description: Alias label proposal associated with given mobile application. This field can be used only during token registration
+    example: my_blik_alias
   registerTokenValue:
     type: string
     description: UID token value assigned by the merchant. This field can be used only during token registration
+    example: my_blik_token_name
   register:
     type: boolean
-    description: Set to true specifies that an alias registration request will be sent. Set to false will result in payment with a T6 authorization code without token registration.
+    description: Set to true specifies that an alias registration request will be sent. Set to false will result in payment with a T6 authorization code without token registration
   appKey:
     type: string
-    description: The identifier of the customer's chosen bank mobile application within which the transaction authorization will take place.
+    description: The identifier of the customer's chosen bank mobile application within which the transaction authorization will take place
+    example: my_blik_app_in_bank_X
   recommendedAuthLevel:
     type: string
-    description: UID token value assigned by the merchant. This field can be used only during token registration
+    description: Proposed transaction authorization level, where NO_CONFIRMATION means no need for the buyer to confirm the transaction in the bank's mobile application. The use of this parameter requires signing an appropriate annex and meeting certain compliance requirements. For more information, contact your PayU account manager
     enum: [NO_CONFIRMATION, REQUIRED_CONFIRMATION]

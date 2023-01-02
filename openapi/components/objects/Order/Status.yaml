@@ -3,6 +3,8 @@ properties:
   statusCode:
     type: string
     description: Response code
+    example: SUCCESS
   statusDesc:
     type: string
     description: Response status description
+    example: Request processing successful

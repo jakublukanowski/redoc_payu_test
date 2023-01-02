@@ -5,5 +5,7 @@ items:
   properties:
     name:
       type: string
+      example: subtotal
     value:
       type: string
+      example: 1000.00

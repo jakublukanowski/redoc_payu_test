@@ -199,10 +199,10 @@ responses:
                           example: 2026
                     type:
                       type: string
-                      enum: [PBL, CARD_TOKEN, PAYMENT_WALL, BLIK_AUTHORIZATION_CODE, BLIK_TOKEN, UID]
+                      enum: [CARD_TOKEN]
                     value:
                       type: string
-                      example: dpp
+                      example: TOKC_XATB7DF8ACXYTVQIPLWTVPFRKQE
   400:
     description: Bad Request
     content:

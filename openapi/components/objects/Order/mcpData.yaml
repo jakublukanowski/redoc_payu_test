@@ -4,16 +4,21 @@ required: [mcpCurrency, mcpAmount, mcpRate, mcpFxTableId, mcpPartnerId]
 properties: 
   mcpCurrency:
     type: string
-    description: termCurrency from the rate table.
+    description: termCurrency from the rate table
+    example: EUR
   mcpAmount:
     type: string
-    description: baseCurrency amount converted to termCurrency.
+    description: baseCurrency amount converted to termCurrency
+    example: 235
   mcpRate:
     type: string
-    description: Applied conversion rate.
+    description: Applied conversion rate
+    example: 4.2556
   mcpFxTableId:
     type: string
-    description: Applied FX rate table id.
+    description: Applied FX rate table id
+    example: 132331
   mcpPartnerId:
     type: string
-    description: Id provided by PayU.
+    description: Id provided by PayU
+    example: 6283a549-8b1a-430d-8a62-eea64327440e

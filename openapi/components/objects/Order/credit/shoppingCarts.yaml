@@ -1,0 +1,12 @@
+type: array
+description: Section containing data of the ordered products. Section <credit.shoppingCarts> is an array of objects of type shoppingCart
+items:
+  type: object
+  properties:
+    shippingMethod:
+      $ref: shoppingCarts/shippingMethod.yaml
+    products:
+      $ref: shoppingCarts/products.yaml
+    extCustomerId:
+      type: string
+      description: Submerchant identifier. This field should be consistent with field extCustomerId in shoppingCarts section when order is placed in marketplace

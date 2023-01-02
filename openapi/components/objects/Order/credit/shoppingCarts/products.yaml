@@ -7,15 +7,15 @@ items:
     name: 
       type: string
       description: Name of the product
-      example: My product
+      example: Test Product
     unitPrice:
       type: string
       description: Unit price
       example: 999
     quantity:
       type: string
-      description: Quantity of prodcuts
-      example: 4
+      description: Quantity of products
+      example: 2
     virtual:
       type: boolean
       description: Product type, which can be virtual or material

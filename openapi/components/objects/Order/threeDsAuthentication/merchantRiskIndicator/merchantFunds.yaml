@@ -4,7 +4,9 @@ required: [amount, currencyCode]
 properties: 
   amount:
     type: string
-    description: In pennies.
+    description: Amount in pennies
+    example: 100
   currencyCode:
     type: string
-    description: Currency code compliant with ISO 4217.
+    description: Currency code compliant with ISO 4217
+    example: PLN

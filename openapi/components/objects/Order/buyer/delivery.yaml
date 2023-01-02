@@ -3,16 +3,20 @@ description: Section containing delivery address. For a list of parameters, see 
 properties:
   street:
     type: string
-    description: Full street address, incl. apartment number.
+    description: Full street address, including apartment number
+    example: Test Street
   postalBox:
     type: string
     description: Postal box
+    example: PO BOX 123ABC
   postalCode:
     type: string
     description: Postal code
+    example: 66-666
   city:
     type: string
     description: city
+    example: Test City
   state:
     type: string
     description: Country principal subdivision like "state" or "province". If provided, must be a valid ISO 3166-2 code (e.g. "UT" for Utah in the USA or "30" for "Wielkopolskie" in Poland).
@@ -20,15 +24,20 @@ properties:
   countryCode:
     type: string
     description: Two-letter country code compliant with ISO-3166.
+    example: PL
   name: 
     type: string
     description: Address description
+    example: Home address
   recipientName:
     type: string
     description: Recipient name
+    example: John Doe
   recipientEmail:
     type: string
-    description: Ecipient email
+    description: Recipient email
+    example: john@doe.com
   recipientPhone:
     type: string
     description: Recipient phone number
+    example: +48888888888

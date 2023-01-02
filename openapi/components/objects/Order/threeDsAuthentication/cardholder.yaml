@@ -3,7 +3,8 @@ description: Describes cardholder's account data in merchant's possession, inclu
 properties: 
   name:
     type: string
-    description: Cardholder name and surname.
+    description: Cardholder name and surname
+    example: John Doe
   accountInformation:
     $ref: cardholder/accountInformation.yaml
   billingAddress:

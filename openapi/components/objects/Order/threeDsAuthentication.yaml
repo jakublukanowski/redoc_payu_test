@@ -5,6 +5,7 @@ properties:
     type: string
     description: Merchant's preference regarding 3DS 2 challenge. Exclusive with exemption. Maybe overridden by PayU.
     enum: [YES, NO, MANDATE]
+    example: YES
   exemption:
     $ref: threeDsAuthentication/exemption.yaml
   browser:

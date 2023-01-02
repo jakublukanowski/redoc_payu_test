@@ -3,3 +3,4 @@ properties:
   id:
     type: string
     description: submerchant ID when payment is created by Payment Facilitator for Submerchant
+    example: 9063b12c-fcde-43c7-b28e-8d0af5520e8a
