@@ -63,55 +63,55 @@ responses:
                     properties:
                       cardData:
                         type: object
-                          properties:
-                            cardNumberMasked:
-                              type: string
-                              description: Masked card number (real number or token - in case of Apple Pay and Google Pay Tokenized).
-                              example: "543402******4014"
-                            cardScheme:
-                              type: string
-                              description: "Payment organization: MC (MasterCard/Maestro), VS (Visa)"
-                              example: "MC"
-                            cardProfile:
-                              type: string
-                              description: Card profile (CONSUMER or BUSINESS)
-                              example: "CONSUMER"
-                            cardClassification:
-                              type: string
-                              description: Card classification (CREDIT/DEBIT)
-                              example: "DEBIT"
-                            cardResponseCode:
-                              type: string
-                              description: Response code
-                              example: "000"
-                            cardResponseCodeDesc:
-                              type: string
-                              description: Response code with description
-                              example: "000 - OK"
-                            cardEciCode:
-                              type: string
-                              description: Electronic Commerce Indicator
-                              example: "2"
-                            card3DsStatus:
-                              type: string
-                              description: 3DS verification status
-                              example: "Y"
-                            card3DsFrictionlessIndicator:
-                              type: string
-                              description: Indicates whether the authentication was frictionless or with challenge
-                              example: "YES"
-                            card3DsStatusDescription:
-                              type: string
-                              description: Description of 3DS status
-                              example: "MessageVersion=2.1.0,browser flow,3DS method not available,dynamic authentication,no cancel indicator,no status reason"
-                            cardBinCountry:
-                              type: string
-                              description: Country in which card was issued. Two-letter country code compliant with ISO-3166
-                              example: "PL"
-                            firstTransactionId:
-                              type: string
-                              description: Identifier of the first of recurring payments or Card-on-File, granted by the payment organisation
-                              example: "MCC0111LL1121"
+                        properties:
+                          cardNumberMasked:
+                            type: string
+                            description: Masked card number (real number or token - in case of Apple Pay and Google Pay Tokenized).
+                            example: "543402******4014"
+                          cardScheme:
+                            type: string
+                            description: "Payment organization: MC (MasterCard/Maestro), VS (Visa)"
+                            example: "MC"
+                          cardProfile:
+                            type: string
+                            description: Card profile (CONSUMER or BUSINESS)
+                            example: "CONSUMER"
+                          cardClassification:
+                            type: string
+                            description: Card classification (CREDIT/DEBIT)
+                            example: "DEBIT"
+                          cardResponseCode:
+                            type: string
+                            description: Response code
+                            example: "000"
+                          cardResponseCodeDesc:
+                            type: string
+                            description: Response code with description
+                            example: "000 - OK"
+                          cardEciCode:
+                            type: string
+                            description: Electronic Commerce Indicator
+                            example: "2"
+                          card3DsStatus:
+                            type: string
+                            description: 3DS verification status
+                            example: "Y"
+                          card3DsFrictionlessIndicator:
+                            type: string
+                            description: Indicates whether the authentication was frictionless or with challenge
+                            example: "YES"
+                          card3DsStatusDescription:
+                            type: string
+                            description: Description of 3DS status
+                            example: "MessageVersion=2.1.0,browser flow,3DS method not available,dynamic authentication,no cancel indicator,no status reason"
+                          cardBinCountry:
+                            type: string
+                            description: Country in which card was issued. Two-letter country code compliant with ISO-3166
+                            example: "PL"
+                          firstTransactionId:
+                            type: string
+                            description: Identifier of the first of recurring payments or Card-on-File, granted by the payment organisation
+                            example: "MCC0111LL1121"
                   cardInstallmentProposal:
                     type: object
                     description: Chosen payment method
