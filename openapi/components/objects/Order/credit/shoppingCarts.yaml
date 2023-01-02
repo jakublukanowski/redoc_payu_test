@@ -10,3 +10,4 @@ items:
     extCustomerId:
       type: string
       description: Submerchant identifier. This field should be consistent with field extCustomerId in shoppingCarts section when order is placed in marketplace
+      example: 87ad751f-7ea5-4023-a16f-04b6647a07f5

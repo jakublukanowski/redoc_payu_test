@@ -74,7 +74,7 @@ responses:
                               cardNumberMasked:
                                 type: string
                                 description: Masked card number (real number or token - in case of Apple Pay and Google Pay Tokenized).
-                                example: 543402******4014
+                                example: "543402******4014"
                               cardScheme:
                                 type: string
                                 description: "Payment organization: MC (MasterCard/Maestro), VS (Visa)"

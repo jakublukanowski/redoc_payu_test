@@ -1,0 +1,17 @@
+type: array
+description: Array of objects related to shipping method.
+items:
+  type: object
+  properties:
+    country:
+      type: string
+      description: 	Two-letter shipping country code compliant with ISO-3166
+      example: PL
+    price:
+      type: number
+      description: Shipping price.
+      example: 250
+    name:
+      type: string
+      description: Shipping method name
+      example: Postal package

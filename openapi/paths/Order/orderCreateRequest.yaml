@@ -39,7 +39,7 @@ requestBody:
           description:
             type: string
             description: Description of the order
-            example: Your transaction descirption
+            example: Your transaction description
           additionalDescription:
             type: string
             description: Additional description of the order
