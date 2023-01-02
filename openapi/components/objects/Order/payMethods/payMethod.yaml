@@ -12,7 +12,7 @@ properties:
     example: c
   authorizationCode:
     type: string
-    description: Optional, usage differs depending on payment method. For BLIK integrated transparently: enables to collect 6-digit BLIK code on your website instead of redirecting to BLIK, for Visa Checkout integrated tranparently: carries callId param
+    description: "Optional, usage differs depending on payment method. For BLIK integrated transparently: enables to collect 6-digit BLIK code on your website instead of redirecting to BLIK, for Visa Checkout integrated tranparently: carries callId param"
     example: 777123
   specificData:
     $ref: payMethod/specificData.yaml
