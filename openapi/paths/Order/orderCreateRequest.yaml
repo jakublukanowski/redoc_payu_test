@@ -17,7 +17,7 @@ requestBody:
         properties:
           continueUrl:
             type: string
-            description: Address for redirecting the customer after payment is commenced.
+            description: Address for redirecting the customer after payment is commenced
             example: www.example.com/path
           notifyUrl:
             type: string
@@ -28,49 +28,61 @@ requestBody:
             description: "Payer’s IP address, e.g. 123.123.123.123. Note: 0.0.0.0 is not accepted."
             examples:
               - "127.0.0.1"
+              - "127.0.0.2"
+              - "8d33:56b2:24aa:b822:9b2f:1db7:c21d:04e1"
           merchantPosId:
             type: string
-            description: Point of sale ID.
+            description: Point of sale ID
             examples: 
               - "140332"
+              - "145227"
           description:
             type: string
-            description: 	Description of the order.
+            description: Description of the order
+            example: Your transaction descirption
           additionalDescription:
             type: string
-            description: Additional description of the order.
+            description: Additional description of the order
+            example:
           visibleDescription:
             type: string
             maxLength: 80
-            description: Order/Payment description visible for Buyer on the PayU payment page.
+            description: Order/Payment description visible for Buyer on the PayU payment page
+            example:
           statementDescription:
             type: string
             maxLength: 22
-            description: Payment recipient name followed by payment description (order ID, ticket number etc) visible on card statement. The name should be easy to recognize by the cardholder. If field is not provided, static name configured by PayU will be used.
+            description: Payment recipient name followed by payment description (order ID, ticket number etc) visible on card statement. The name should be easy to recognize by the cardholder. If field is not provided, static name configured by PayU will be used
+            example:
           extOrderId:
             type: string
-            description: ID of an order used in merchant system. Order identifier assigned by the merchant. It enables merchants to find a specific order in their system. This value must be unique within a single POS.
+            description: ID of an order used in merchant system. Order identifier assigned by the merchant. It enables merchants to find a specific order in their system. This value must be unique within a single POS
+            example:
           currencyCode:
             type: string
-            description: Currency code compliant with ISO 4217 (e.g EUR).
+            description: Currency code compliant with ISO 4217 (e.g EUR)
             examples: 
               - EUR
+              - PLN
+              - USD
           totalAmount:
             type: string
-            description: Total price of the order in pennies (e.g. 1000 is 10.00 EUR). Applies also to currencies without subunits (e.g. 1000 is 10 HUF).
+            description: Total price of the order in pennies (e.g. 1000 is 10.00 EUR). Applies also to currencies without subunits (e.g. 1000 is 10 HUF)
             example: "1000"
           validityTime:
             type: string
-            description: Duration for the validity of an order (in seconds), during which time payment must be made. Default value 86400.
+            description: Duration for the validity of an order (in seconds), during which time payment must be made. Default value 86400
             example: "100000"
           cardOnFile:
             type: string
-            description: 	Information about party initializing order or a transaction with Buyer consent to save card token. "cardOnFile" parameter cannot be used with "recurring" parameter.
+            description: 	Information about party initializing order or a transaction with Buyer consent to save card token. "cardOnFile" parameter cannot be used with "recurring" parameter
             enum: [FIRST, STANDARD_CARDHOLDER, STANDARD_MERCHANT]
+            example: FIRST
           recurring:
             type: string
             description: Marks the order as recurring payment - first or subsequent. "recurring" parameter cannot be used with "cardOnFile" parameter
-            enum: [FIRST, STANDARD] 
+            enum: [FIRST, STANDARD]
+            example: FIRST
           buyer:
             $ref: ../../components/objects/Order/Buyer.yaml
           products:
@@ -100,23 +112,35 @@ responses:
               properties: 
                 statusCode:
                   type: string
-            redirectUri:
-              type: string
+                  example: SUCCESS
             orderId:
               type: string
+              example: WZHF5FFDRJ140731GUEST000P01
+            iframeAllowed:
+              type: boolean
+              example: true
+            threeDsProtocolVersion:
+              type: string
+              enum: [3DS2]
+              example: 3DS2
             extOrderId:
               type: string
+              example: my_ext_order_id
             challengeParameters:
               type: object
               properties:
                 threeDsServerTransactionId:
                   type: string
+                  example: 0016f22b-f988-4358-b2c6-8917bba22037
                 acsTransID:
                   type: string
+                  example: d7c1ee99-9478-44a6-b1f2-391e29c6b340
                 acsReferenceNumber:
                   type: string
+                  example: 3DS_LOA_ACS_201_13579
                 acsSignedContent:
                   type: string
+                  example: c29tZUJhc2U2NGVuY29kZWRTdHJpbmc=
   302:
     description: Found
     content:
@@ -129,24 +153,29 @@ responses:
               properties: 
                 statusCode:
                   type: string
-                  description: Payment status.
+                  description: Response code
+                  example: SUCCESS
                 severity:
                   type: string
+                  example: WARNING
             redirectUri:
               type: string
-              description: Url redirection address with payment summary.
+              description: Url redirection address with payment summary
+              example: https://merch-prod.snd.payu.com/pay/?orderId=WZHF5FFDRJ140731GUEST000P01&token=eyJhbGciOiJIUzI1NiJ9.eyJvcmRlcklkIjoiV1pIRjVGRkRSSjE0MDczMUdVRVNUMDAwUDAxIiwicG9zSWQiOiJhYmMxMjM0IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9DTElFTlQiXSwicGF5ZXJFbWFpbCI6InRlc3RAdGVzdC5jb20iLCJleHAiOjE2NzI3NjE4NjEsImlzcyI6IlBBWVUiLCJhdWQiOiJhcGktZ2F0ZXdheSIsInN1YiI6IlBheVUgc3ViamVjdCIsImp0aSI6IjYzMTA3M2Y0LThmMzgtNDNlZS1iOTc1LWVlNWIwZGI0ZWFiZSJ9.tBThoQDVgo9mpmh2AUDC5hkfecwtqO0L9LSCdXRYruk
             iframeAllowed:
               type: boolean
               example: true
             threeDsProtocolVersion:
               type: string
-              enum: [3DS1, 3DS2]
+              enum: [3DS2]
             orderId:
               type: string
-              description: Order identifier given by PayU.
+              description: Order identifier given by PayU
+              example: WZHF5FFDRJ140731GUEST000P01
             extOrderId:
               type: string
-              description: Order identifier given by merchant.
+              description: Order identifier given by merchant
+              example: my_ext_order_id
             payMethods:
               type: object
               properties: 
@@ -158,33 +187,22 @@ responses:
                       properties: 
                         number:
                           type: string
-                          description: Card number.
+                          description: Card number
+                          example: 4444333322221111
                         expirationMonth:
                           type: integer
-                          description: Card expiration month.
+                          description: Card expiration month
+                          example: 09
                         expirationYear:
                           type: integer
-                          description: Card expiration year.
+                          description: Card expiration year
+                          example: 2026
                     type:
                       type: string
+                      enum: [PBL, CARD_TOKEN, PAYMENT_WALL, BLIK_AUTHORIZATION_CODE, BLIK_TOKEN, UID]
                     value:
                       type: string
-        # examples: 
-        #   success:
-        #     summary: SUCCESS
-        #     value: 
-        #       status: SUCCESS
-        #       redirectUri: "{payment_summary_redirection_url}"
-        #       orderId: WZHF5FFDRJ140731GUEST000P01
-        #       extOrderId: "{YOUR_EXT_ORDER_ID}"
-        #   warning_continue_redirect:
-        #     summary: WARNING_CONTINUE_REDIRECT
-        #     value:
-        #       status: WARNING_CONTINUE_REDIRECT
-        #       redirectUri: "{payment_summary_redirection_url}"
-        #       orderId: WZHF5FFDRJ140731GUEST000P01
-        #       extOrderId: "{YOUR_EXT_ORDER_ID}"
-          
+                      example: dpp
   400:
     description: Bad Request
     content:

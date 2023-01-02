@@ -42,9 +42,11 @@ responses:
             orderId:
               type: string
               description: Order identifier in PayU's system.
+              example: WZHF5FFDRJ140731GUEST000P01
             extOrderId:
               type: string
               description: Order identifier in merchant's system.
+              example: 3e5cac39-7e38-4139-8fd6-30adc06a61bd
             status:
               type: object
               properties: 
