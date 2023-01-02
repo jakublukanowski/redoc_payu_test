@@ -46,12 +46,11 @@ responses:
                 type: object
                 properties:
                   payMethod:
-                    type: string
-                    description: Chosen payment method
+                    type: object
                     properties:
                       value:
                         type: string
-                        description: Chosen payment method
+                        description: Payment method code
                         example: c
                   paymentFlow:
                     type: string
