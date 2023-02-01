@@ -50,7 +50,7 @@ responses:
             currencyCode:
               type: string
               description: ISO 4217 currency code of currency in which Shop balance is kept.
-               example: "PLN"
+              example: "PLN"
             balance:
               $ref: ../../components/objects/Shop/balance.yaml
   400:
