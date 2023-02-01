@@ -73,6 +73,7 @@ responses:
                     type: string
                     description: Refund status code.
                     enum: [PENDING, CANCELED, FINALIZED]
+
   404:
     description: Not Found
     content: 

@@ -45,28 +45,31 @@ requestBody:
             type: object
             required: 
               -  description
-            description: Contains detailed information about a refund.
+            description: Contains detailed information about a refund
             properties: 
               description:
                 type: string
                 description: Refund description
+                example: Test refund
               amount:
                 type: string
-                description: Amount of the refund. If this is left blank, all funds will be returned to the buyer.
+                description: Amount of the refund. If this is left blank, all funds will be returned to the buyer
                 example: "10000"
               extRefundId:
                 type: string
-                description: External refund ID.
+                description: External refund ID
+                example: 3e5cac39-7e38-4139-8fd6-30adc06a61bd
               currencyCode:
                 type: string
-                description: 	Currency code compliant with ISO 4217.
+                description: 	Currency code compliant with ISO 4217
                 example: PLN
               bankDescription:
                 type: string
-                description: Bank operation description.
+                description: Bank operation description
+                example: Bank transfer refund
               type:
                 type: string
-                description: Operation type.
+                description: Operation type
                 enum: [REFUND_PAYMENT_STANDARD]
                 example: REFUND_PAYMENT_STANDARD
 responses: 
@@ -79,7 +82,8 @@ responses:
           properties:
             orderId:
               type: string
-              description: ID of refunded order.
+              description: ID of refunded order
+              example: WZGF5FFDRJ140731GUEST000P01
             refund:
               type: object
               description: Refund details.
@@ -87,67 +91,54 @@ responses:
                 description:
                   type: string
                   description: Refund description
+                  example: Test refund
                 amount:
                   type: string
-                  description: Amount of the refund. If this is left blank, all funds will be returned to the buyer.
+                  description: Amount of the refund. If this is left blank, all funds will be returned to the buyer
                   example: "10000"
                 extRefundId:
                   type: string
-                  description: External refund ID.
+                  description: External refund ID
+                  example: 3e5cac39-7e38-4139-8fd6-30adc06a61bd
                 currencyCode:
                   type: string
-                  description: 	Currency code compliant with ISO 4217.
+                  description: 	Currency code compliant with ISO 4217
                   example: PLN
                 bankDescription:
                   type: string
-                  description: Bank operation description.
+                  description: Bank operation description
+                  example: Bank transfer refund
                 creationDateTime:
                   type: string
-                  description: Date of refund creation.
+                  description: Date of refund creation
                   example: "2020-07-02T09:19:03.896+02:00"
                 status:
                   type: string
-                  description: Refund status code.
+                  description: Refund status code
                   enum: 
                     - PENDING
                     - CANCELED
                     - FINALIZED
+                  example: FINALIZED
                 statusDatetime:
                   type: string
                   description: Timestamp of the status.
                   example: "2020-07-02T09:19:04.013+02:00"
             status:
               type: object
-
               properties: 
                 statusCode:
                   type: string
-                  description: Status of the refund.
+                  description: Status of the refund
+                  example: SUCCESS
                 statusDesc:
                   type: string
-                  description: Description og given status.
+                  description: Description og given status
+                  example: Refund queued for processing
   400:
-    description: Bad request
-    content: 
-      application/json: 
-        schema: 
-          type: object
-          properties: 
-            status:
-              type: object
-              properties: 
-                statusCode:
-                  type: string
-                  description: Error type.
-                severity:
-                  type: string
-                code: 
-                  type: string
-                  description: Identification code of specific error.
-                codeLiteral:
-                  type: string
-                  description: Cause of error.
-                statusDesc:
-                  type: string
-                  description: Error description.
+    description: Bad Request
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/responses/400.yaml
 

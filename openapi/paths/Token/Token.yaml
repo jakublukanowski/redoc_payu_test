@@ -4,7 +4,7 @@ summary: Card token deletion
 description: Card token deletion
 operationId: TokenDeleteRequest
 security: 
-  -  OAuth token: []
+  -  OAuth token: [trusted_merchant]
 parameters:
   - name: token
     in: path

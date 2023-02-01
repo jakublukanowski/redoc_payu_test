@@ -3,7 +3,8 @@ description: Section containing Shop balance information.
 properties:
   currencyCode:
     type: string
-    description: ISO 4217 currency code of currency in which Shop balance is kept.
+    description: ISO 4217 currency code of currency in which Shop balance is kept
+    example: PLN
   total:
     type: number
     description: total balance of funds on Shop
