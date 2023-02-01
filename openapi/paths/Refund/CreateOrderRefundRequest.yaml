@@ -119,7 +119,7 @@ responses:
                     - PENDING
                     - CANCELED
                     - FINALIZED
-                  example: FINALIZED
+                  example: PENDING
                 statusDatetime:
                   type: string
                   description: Timestamp of the status.
